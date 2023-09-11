@@ -50,3 +50,17 @@
         padding: 0.5rem 1.5rem;
     }
 }
+.btn-setDescription {
+    background-color: #bee2f8;
+    border: 1px solid #5ba2e4;
+    height: 25px;
+    margin: 0 0 0 5px;
+    padding: 0;
+    width: 70px;
+    color: #0067ac;
+}
+.btn-setDescription:hover {
+    background-color: #9ec7e0;
+    color: #045083;
+    box-shadow:  0 2px 2px #5088aa;
+}

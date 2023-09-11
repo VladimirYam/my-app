@@ -1,6 +1,7 @@
 import "./CostItem.css";
 import CostDate from "./CostDate";
 import Card from '../UI/Card'
+// import React, {useState} from "react";
 
 function CostItem(props) {
   return (
@@ -10,6 +11,7 @@ function CostItem(props) {
         <h2>{props.description}</h2>
         <div className="cost-item__price">{props.amount} р.</div>
       </div>
+     
     </Card>
   );
 }

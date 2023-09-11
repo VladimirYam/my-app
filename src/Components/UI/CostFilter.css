@@ -1,0 +1,15 @@
+.cost-filter {
+    display: flex;
+    justify-content: right;
+    /* align-items: center; */
+    /* width: 100px; */
+    margin: 0 20px;
+}
+.cost-filter select {
+    width: 100px;
+    height: 24px;
+    border: 1px solid #548eda;
+    background-color: #e8f8ff;
+    color: #2d70c7;
+    font-size: 15px;
+}

@@ -1,28 +1,39 @@
 import "./CostBlock.css";
 import CostItem from "./CostItem";
 import Card from "../UI/Card";
+import CostFilter from "../UI/CostFilter";
+import React, { useState } from "react";
 
 function CostBlock(props) {
- 
+  const [selectedYear, setSwlectedYear] = useState("2023");
+
+  const yearChangeHendler = (year) => {
+    setSwlectedYear(year);
+  };
+  const filteredCosts = props.costs.filter((cost) => {
+      return cost.date.getFullYear().toString() === selectedYear
+  })
+  
+  let costsContent = <p>Расходов нет</p>
+  if(filteredCosts.length > 0) {
+    costsContent = filteredCosts.map((cost) => (
+          <CostItem
+            key={cost.id}
+            date={cost.date}
+            description={cost.description}
+            amount={cost.amount}
+          />))
+  }
+
   return (
-    <Card className="cost-block">
-      <CostItem
-        date={props.costs[0].date}
-        description={props.costs[0].description}
-        amount={props.costs[0].amount}
-      />
-      <CostItem
-        date={props.costs[1].date}
-        description={props.costs[1].description}
-        amount={props.costs[1].amount}
-      />
-      <CostItem
-        date={props.costs[2].date}
-        description={props.costs[2].description}
-        amount={props.costs[2].amount}
-      />
-    </Card>
+    <div>
+      <Card className="cost-block">
+        <CostFilter year={selectedYear} onChangeYear={yearChangeHendler} />
+        {costsContent}
+
+      </Card>
+    </div>
   );
 }
 
-export default CostBlock
+export default CostBlock;
