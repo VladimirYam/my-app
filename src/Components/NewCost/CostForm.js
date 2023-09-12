@@ -1,7 +1,7 @@
 import "./CostForm.css";
 import React, { useState } from "react";
 
-const CostForm = (props) => {
+const CostForm = ({ onSaveCostData, onCancel }) => {
   const [inputName, setInputName] = useState("");
   const [inputAmount, setInputAmount] = useState("");
   const [inputDate, setInputDate] = useState("");
@@ -20,10 +20,10 @@ const CostForm = (props) => {
     const costData = {
       description: inputName,
       amount: inputAmount,
-      date: new Date(inputDate || 0) ,
+      date: new Date(inputDate || new Date()),
     };
 
-    props.onSaveCostData(costData);
+    onSaveCostData(costData);
     setInputName("");
     setInputAmount("");
     setInputDate("");
@@ -50,11 +50,11 @@ const CostForm = (props) => {
         </div>
         <div className="new-cost__action">
           <button type="submit">Добавить</button>
-          <button type="submit">Отмена</button>
+          <button type="button" onClick={onCancel}>
+            Отмена
+          </button>
         </div>
       </div>
-
-      <div></div>
     </form>
   );
 };

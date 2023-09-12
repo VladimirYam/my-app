@@ -1,28 +1,39 @@
-.new-cost {
-    display: flex;
-    background-color: #cbe8ff;
-    padding: 1rem 1rem 0 ;
-    margin: 2rem auto;
-    width: 16rem;
-    /* max-width: 30%; */
-    border-radius: 4px;   
-    text-align: center;
-    box-shadow: 0 1px 7px #455874;
+.new-cost,
+.btn-new-cost {
+  display: flex;
+  background-color: #cbe8ff;
+  padding: 1rem 1rem 0;
+  margin: 2rem auto;
+  width: 16rem;
+  /* max-width: 30%; */
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 1px 7px #455874;
 }
-.new-cost button {
-    font: inherit;
-    cursor: pointer;
-    padding: 5px 0px;
-    background-color: #e3f4ff;
-    border: 1px solid #5ba2e4;
-    color: #015791;
-    font-weight: 500;
-    border-radius: 4px;
-    /* margin-right: 3px; */
-    width: 50%;
+.new-cost button,
+.btn-new-cost button {
+  font: inherit;
+  cursor: pointer;
+  padding: 5px 0px;
+  background-color: #e3f4ff;
+  border: 1px solid #5ba2e4;
+  color: #015791;
+  font-weight: 500;
+  border-radius: 4px;
+  /* margin-right: 3px; */
+  width: 50%;
 }
-.new-cost button:hover, .new-cost button:active {
-    background-color: #9ec7e0;
-    color: #045083;
-    box-shadow:  0 2px 2px #5088aa;
+.new-cost button:hover,
+.btn-new-cost button:hover,
+.new-cost button:hover,
+.btn-new-cost button:active {
+  background-color: #9ec7e0;
+  color: #045083;
+  box-shadow: 0 2px 2px #5088aa;
+}
+.btn-new-cost {
+  padding: 5px 1rem;
+  /* justify-content: center; */
+  margin: 0 auto;
+  margin-bottom: 15px;
 }

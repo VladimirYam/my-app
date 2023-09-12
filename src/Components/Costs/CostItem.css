@@ -1,66 +1,75 @@
 .cost-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    background-color: #e9f6fc;
-   
-    border: 1px solid #a2c8e0;
-   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  background-color: #e9f6fc;
+  border: 1px solid #a2c8e0;
+  min-width: 300px;
 }
 .cost-item__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 1rem;
-    flex-flow: column-reverse;
-    flex: 1;
-    margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 0.5rem; */
+  /* flex-flow: column-reverse; */
+  flex: 1;
+  /* margin-left: 15px; */
+  margin: 0 10px;
 }
-.cost-item h2{
-    color: #0067ac;
-    font-size: 1rem;
-    flex:1;
-    margin: 0 auto;
-    /* color: aliceblue; */
+.cost-item h2 {
+  color: #0067ac;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0;
+  max-width: 180px;
+
+  /* color: aliceblue; */
 }
 .cost-item__price {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #5088aa;
-    background-color: #e7f5ff;
-    border: 1px solid #a2c8e0;
-    padding: 0.5rem;
-    border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5088aa;
+  background-color: #e7f5ff;
+  border: 1px solid #a2c8e0;
+  padding: 2px;
+  border-radius: 4px;
+  /* height: 20px; */
+  align-items: center;
 }
 @media (min-width: 580px) {
-    .cost-item__description {
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        flex: 1;
-    }
-    .cost-item__description h2 {
-        font-size: 1.25rem;
-    }
-    .cost-item__price {
-        font-size: 1.25rem;
-        padding: 0.5rem 1.5rem;
-    }
+  .cost-item__description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .cost-item__description h2 {
+    font-size: 1.25rem;
+    max-width: none;
+  }
+  .cost-item__price {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.7rem;
+    width: 130px;
+    text-align: left;
+    align-items: center;
+  }
 }
 .btn-setDescription {
-    background-color: #bee2f8;
-    border: 1px solid #5ba2e4;
-    height: 25px;
-    margin: 0 0 0 5px;
-    padding: 0;
-    width: 70px;
-    color: #0067ac;
+  background-color: #bee2f8;
+  border: 1px solid #5ba2e4;
+  height: 25px;
+  margin: 0 0 0 5px;
+  padding: 0;
+  width: 70px;
+  color: #0067ac;
 }
 .btn-setDescription:hover {
-    background-color: #9ec7e0;
-    color: #045083;
-    box-shadow:  0 2px 2px #5088aa;
+  background-color: #9ec7e0;
+  color: #045083;
+  box-shadow: 0 2px 2px #5088aa;
 }

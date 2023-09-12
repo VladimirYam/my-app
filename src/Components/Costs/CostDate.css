@@ -1,4 +1,34 @@
 .cost-date {
+  display: flex;
+  width: 4rem;
+  /* height: 2rem; */
+  border: 1px solid #b9d5dd;
+  background-color: #e4f7ff;
+  color: #28839e;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* font-size: 1rem; */
+  /* font-weight: bold; */
+}
+.cost-date__month {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0 4px;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+}
+.cost-date__year {
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+}
+.cost-date__day {
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+}
+@media (min-width: 580px) {
+  .cost-date {
     display: flex;
     width: 8rem;
     height: 2rem;
@@ -8,21 +38,21 @@
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    /* font-size: 1rem; */
-    /* font-weight: bold; */
-}
-.cost-date__month {
-    font-size: 1rem;
+    flex-direction: row;
+  }
+  .cost-date__month {
+    font-size: 0.9rem;
     font-weight: 400;
     padding: 0 4px;
     /* font-weight: bold; */
     text-transform: uppercase;
-}
-.cost-date__yaer {
-    font-size: 1rem;
+  }
+  .cost-date__year {
+    font-size: 0.9rem;
     /* font-weight: bold; */
-}
-.cost-date__day {
-    font-size: 1rem;
+  }
+  .cost-date__day {
+    font-size: 0.9rem;
     /* font-weight: bold; */
+  }
 }
