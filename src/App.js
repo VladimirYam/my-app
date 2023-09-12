@@ -11,13 +11,13 @@ const INITIAL_COSTS = [
   },
   {
     id: "c2",
-    date: new Date(2021, 12, 2),
+    date: new Date(2022, 12, 2),
     description: "Apple",
     amount: 75,
   },
   {
     id: "c3",
-    date: new Date(2021, 4, 15),
+    date: new Date(2023, 4, 15),
     description: "Banana",
     amount: 120,
   },

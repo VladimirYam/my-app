@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import CostFilter from "../UI/CostFilter";
 import React, { useState } from "react";
 import CostList from "./CostList";
+import CostsDiagramm from "./CostsDiagramm";
 
 function CostBlock({ costs }) {
   const [selectedYear, setSwlectedYear] = useState("2023");
@@ -18,6 +19,7 @@ function CostBlock({ costs }) {
     <div>
       <Card className="cost-block">
         <CostFilter year={selectedYear} onChangeYear={yearChangeHendler} />
+        <CostsDiagramm costs={filteredCosts} />
         <CostList costs={filteredCosts} />
       </Card>
     </div>
